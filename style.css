@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a5276;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #f1c40f;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Bagian Beranda */
+#beranda {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f39c12;
+}
+
+/* Bagian Umum Section */
+section {
+    padding: 80px 50px;
+    margin-top: 50px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1a5276;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #f1c40f;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Bagian Profil */
+.profil-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.profil-content img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.deskripsi {
+    width: 55%;
+}
+
+.deskripsi h3 {
+    color: #1a5276;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.deskripsi ul {
+    list-style-position: inside;
+}
+
+/* Bagian Fasilitas */
+.fasilitas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.fasilitas-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.fasilitas-item:hover {
+    transform: translateY(-5px);
+}
+
+.fasilitas-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Bagian Kontak */
+.kontak-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kontak-info {
+    width: 40%;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#form-kontak {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-kontak input, #form-kontak textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a5276;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    #navbar {
+        padding: 15px 20px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background-color: #1a5276;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .profil-content img, .deskripsi, .kontak-info, #form-kontak {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}

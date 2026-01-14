@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sekolah SMA Negeri 2 Mranggen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Navbar>
+    <nav id="navbar">
+        <div class="logo">SMA Negeri 2 Mranggen</div>
+        <ul class="menu">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#fasilitas">Fasilitas</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+    </nav>
+
+    <Bagian Beranda>
+    <section id="beranda">
+        <div class="hero-content">
+            <h1>Tempat Mendidik Generasi Masa Depan</h1>
+            <p>Berprestasi, Berkarakter, dan Berbudaya</p>
+            <button onclick="scrollToProfil()">Lihat Profil Sekolah</button>
+        </div>
+    </section>
+
+    <Bagian Profil>
+    <section id="profil">
+        <h2>Profil Sekolah</h2>
+        <div class="profil-content">
+            <img src="siswa.jpeg" alt="Gedung SMA Harapan Bangsa">
+            <div class="deskripsi">
+                <h3>Sejarah Singkat</h3>
+                <p>Didirikan pada  29 Januari 1998, SMA Negeri 2 Mranngen berkomitmen untuk memberikan pendidikan berkualitas dengan fokus pada akademik, olahraga, dan seni. Sekolah ini telah menghasilkan banyak lulusan yang berkiprah di berbagai bidang.</p>
+                <h3>Visi</h3>
+                <p>Menjadi sekolah unggulan yang mencetak generasi beriman, cerdas, dan berakhlak mulia.</p>
+                <h3>Misi</h3>
+                <ul>
+                    <li>Menyelenggarakan pendidikan yang sesuai dengan standar nasional</li>
+                    <li>Mengembangkan potensi siswa secara holistik</li>
+                    <li>Membangun kerja sama dengan masyarakat dan dunia kerja</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <Bagian Fasilitas>
+    <section id="fasilitas">
+        <h2>Fasilitas Sekolah</h2>
+        <div class="fasilitas-grid" id="fasilitas-grid">
+        </div>
+    </section>
+
+    <Bagian Kontak>
+    <section id="kontak">
+        <h2>Hubungi Kami</h2>
+        <div class="kontak-container">
+            <div class="kontak-info">
+                <p><strong>Alamat:</strong> Jl. Pucang Peni Raya, Pucanggading, Batursari, Kec. Mranggen, Kabupaten Demak, Jawa Tengah 59567</p>
+                <p><strong>Telepon:</strong> (024) 76743954</p>
+                <p><strong>Email:</strong> smanda.mrgn@gmail.com</p>
+            </div>
+            <form id="form-kontak">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <Footer>
+    <footer>
+        <p>&copy; 2026 SMA Negeri 2 Mranggen. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
